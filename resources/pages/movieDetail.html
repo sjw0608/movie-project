@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+    <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'/>
+    <meta charset='UTF-8'>
+    <title>电影详情</title>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/movieDetail.css">
+</head>
+<body>
+<div class="movie-detail-content">
+    <header class="fl-en">
+        <div class="fl-en">
+            <img class="back-icon mr-12" src="../images/icon/back_icon.png" alt="">
+            <p class="f-32 white">电影院</p>
+        </div>
+        <div class="fl-en">
+            <img class="share-icon" src="../images/icon/share_icon2.png" alt="">
+            <img class="more-icon" src="../images/icon/more_icon.png" alt="">
+        </div>
+    </header>
+    <div class="player">
+        <video src="../common/source_1.mp4" controls></video>
+    </div>
+    <div class="movie-intro fl-en">
+        <div class="intro-left">
+            <h5 class="f-40 white">假面饭店</h5>
+            <div class="fl-en f-20 black-80">
+                <p>120分钟</p>
+                <p>悬疑</p>
+                <p>上映时间：2020-08-30</p>
+            </div>
+        </div>
+        <div class="intro-right">
+            <div class="fl-en">
+                <img class="star-icon" src="../images/icon/star_icon.png" alt="">
+                <img class="star-icon" src="../images/icon/star_icon.png" alt="">
+                <img class="star-icon" src="../images/icon/star_icon.png" alt="">
+                <img class="star-icon" src="../images/icon/star_icon.png" alt="">
+                <img class="star-icon" src="../images/icon/star_icon.png" alt="">
+                <p class="f-20 red-80">评分</p>
+                <span class="f-40 red-80">9.0</span>
+            </div>
+            <p class="f-20 black-80">10万人参与评论</p>
+        </div>
+    </div>
+    <div class="detail-btn fl-ar mt-12">
+        <button class="bg-gray">
+            <img src="../images/icon/like_icon.png" alt="">
+            <p>想看</p>
+        </button>
+        <button class="bg-gray">
+            <img src="../images/icon/collect_icon.png" alt="">
+            <p>看过</p>
+        </button>
+    </div>
+    <div class="brief f-26 black-80">
+        <img class="movie-img" src="../images/source/movie_6.jpg" alt="">
+        <div class="f-26 ml-20">
+            <p>导演：铃木雅之</p>
+            <div class="fl-en">
+                <p>主演：</p>
+                <p>木村拓哉</p>
+                <p class="ml-12">长泽雅美</p>
+                <p class="ml-12">前田敦子</p>
+            </div>
+            <p>类型：悬疑</p>
+            <p>屏幕：2D</p>
+            <p>片长：120分钟</p>
+        </div>
+    </div>
+    <div class="plot">
+        <h5 class="f-32 white mt-12">剧情介绍：</h5>
+        <p class="f-26 black-80">
+            东京都内发生了三起杀人事件。
+            警方从所有案发现场都遗留有的无法解释的数列推断出这是一系列带有预告信息的连环杀人案，并就此展开了侦查。
+            警视厅搜查一课的精英刑警新田浩介（木村拓哉饰）破译出该数字预示着下一次作案的场所，他由此推测东京柯尔特西亚酒店将会成为第4起命案现场。
+            然而凶手是谁却毫无线索。警方因此决定潜入东京柯尔特西亚进行调查，新田则要扮作前台人员追查凶手。
+            受命指导他的是东京柯尔特西亚的优秀前台员工山岸尚美（长泽雅美饰）。
+        </p>
+        <h5 class="f-32 white mt-12">演员列表：</h5>
+        <div class="swiper-container performer">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide mt-12">
+                    <img class="performer-avatar" src="../images/source/avatar_2.jpeg" alt="">
+                    <p class="f-26 black-80">木村拓哉</p>
+                </div>
+                <div class="swiper-slide mt-12">
+                    <img class="performer-avatar" src="../images/source/avatar_3.jpeg" alt="">
+                    <p class="f-26 black-80">长泽雅美</p>
+                </div>
+                <div class="swiper-slide mt-12">
+                    <img class="performer-avatar" src="../images/source/avatar_1.jpeg" alt="">
+                    <p class="f-26 black-80">前田敦子</p>
+                </div>
+                <div class="swiper-slide mt-12">
+                    <img class="performer-avatar" src="../images/source/avatar_4.jpeg" alt="">
+                    <p class="f-26 black-80">小日向文世</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ticket-buy" onclick="goLink('selectTime.html')">
+        <p class="white f-28">特惠选票</p>
+    </div>
+</div>
+<script src="../js/index.js"></script>
+<script src="../common/swiper.min.js"></script>
+<script>
+  const performerSwiper = new Swiper('.performer',{
+    slidesPerView: 3.2,
+    spaceBetween : 10,
+    freeMode: true,
+    freeModeMomentum: true,
+  });
+</script>
+</body>
+</html>

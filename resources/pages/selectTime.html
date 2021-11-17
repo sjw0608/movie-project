@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+    <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'/>
+    <meta charset="UTF-8">
+    <title>选座购票</title>
+    <link rel="stylesheet" href="../css/selectTime.css">
+</head>
+<body>
+<div class="select-time">
+    <header class="fl-en">
+        <div class="fl-en">
+            <img class="back-icon mr-12" src="../images/icon/back_icon.png" alt="">
+            <p class="f-32 white">假面饭店</p>
+        </div>
+    </header>
+    <div class="date-nav">
+        <div class="f-lex">
+            <p>今天03-27</p>
+            <p class="nav-active">明天03-27</p>
+            <p>后天03-27</p>
+            <p>周六03-27</p>
+            <p>周日03-27</p>
+            <p>下周03-27</p>
+        </div>
+    </div>
+    <nav class="cinema-nav bg-gray fl-ar">
+        <a class="fl-en">
+            <p class="f-26">区域</p>
+            <img src="../images/icon/option_icon.png" alt="">
+        </a>
+        <a class="fl-en">
+            <p class="f-26">品牌</p>
+            <img src="../images/icon/option_icon.png" alt="">
+        </a>
+        <a class="fl-en">
+            <p class="f-26">距离</p>
+            <img src="../images/icon/option_icon.png" alt="">
+        </a>
+        <a class="fl-en">
+            <p class="f-26">筛选</p>
+            <img src="../images/icon/option_icon.png" alt="">
+        </a>
+    </nav>
+    <div class="ad-2 white">
+        <p class="f-36 f-weight mt-12 ml-40">限时观影大优惠</p>
+        <p class="f-26 mb-12 ml-40">首单减5元</p>
+        <p class="buy-btn ml-40">立即购买</p>
+    </div>
+    <div class="cinema-list white">
+        <div class="f-lex">
+            <p class="f-30">万达国际影城(青秀万达)</p>
+            <div class="f-lex ml-auto al-center f-26">
+                <img class="data-icon" src="../images/icon/rank_icon.png" alt="">
+                <p class="ml-12 mr-20">人气5253</p>
+            </div>
+        </div>
+        <p class="f-26 gray-80">南宁市青秀区万达广场10楼</p>
+        <div class="cinema-label mt-12">
+            <p class="bg-yellow">零食</p>
+            <p class="bg-violet">MAX厅</p>
+            <p class="bg-green">中国巨幕</p>
+            <p class="bg-blue">停车场</p>
+            <span class="ml-auto f-26 gray-80 mr-20">1.1Km</span>
+        </div>
+        <div class="fl-en mt-12">
+            <div class="discount">
+                <div>
+                    <p class="bg-green">卡</p>
+                    <p>开通会员卡8折购票</p>
+                </div>
+                <div>
+                    <p class="bg-violet">团</p>
+                    <p>组团购票优惠8折起</p>
+                </div>
+            </div>
+            <div class="price mr-20">
+                <img src="../images/icon/price_icon.png" alt="">
+                <p class="red-80 f-30">
+                    19.9
+                    <span class="f-20">起</span>
+                </p>
+            </div>
+        </div>
+        <div class="time-main">
+            <div class="f-lex scroll-content">
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cinema-list white">
+        <div class="f-lex">
+            <p class="f-30">万达国际影城(青秀万达)</p>
+            <div class="f-lex ml-auto al-center f-26">
+                <img class="data-icon" src="../images/icon/rank_icon.png" alt="">
+                <p class="ml-12 mr-20">人气5253</p>
+            </div>
+        </div>
+        <p class="f-26 gray-80">南宁市青秀区万达广场10楼</p>
+        <div class="cinema-label mt-12">
+            <p class="bg-yellow">零食</p>
+            <p class="bg-violet">MAX厅</p>
+            <p class="bg-green">中国巨幕</p>
+            <p class="bg-blue">停车场</p>
+            <span class="ml-auto f-26 gray-80 mr-20">1.1Km</span>
+        </div>
+        <div class="fl-en mt-12">
+            <div class="discount">
+                <div>
+                    <p class="bg-green">卡</p>
+                    <p>开通会员卡8折购票</p>
+                </div>
+                <div>
+                    <p class="bg-violet">团</p>
+                    <p>组团购票优惠8折起</p>
+                </div>
+            </div>
+            <div class="price mr-20">
+                <img src="../images/icon/price_icon.png" alt="">
+                <p class="red-80 f-30">
+                    19.9
+                    <span class="f-20">起</span>
+                </p>
+            </div>
+        </div>
+        <div class="time-main">
+            <div class="f-lex scroll-content">
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cinema-list white">
+        <div class="f-lex">
+            <p class="f-30">万达国际影城(青秀万达)</p>
+            <div class="f-lex ml-auto al-center f-26">
+                <img class="data-icon" src="../images/icon/rank_icon.png" alt="">
+                <p class="ml-12 mr-20">人气5253</p>
+            </div>
+        </div>
+        <p class="f-26 gray-80">南宁市青秀区万达广场10楼</p>
+        <div class="cinema-label mt-12">
+            <p class="bg-yellow">零食</p>
+            <p class="bg-violet">MAX厅</p>
+            <p class="bg-green">中国巨幕</p>
+            <p class="bg-blue">停车场</p>
+            <span class="ml-auto f-26 gray-80 mr-20">1.1Km</span>
+        </div>
+        <div class="fl-en mt-12">
+            <div class="discount">
+                <div>
+                    <p class="bg-green">卡</p>
+                    <p>开通会员卡8折购票</p>
+                </div>
+                <div>
+                    <p class="bg-violet">团</p>
+                    <p>组团购票优惠8折起</p>
+                </div>
+            </div>
+            <div class="price mr-20">
+                <img src="../images/icon/price_icon.png" alt="">
+                <p class="red-80 f-30">
+                    19.9
+                    <span class="f-20">起</span>
+                </p>
+            </div>
+        </div>
+        <div class="time-main">
+            <div class="f-lex scroll-content">
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cinema-list white">
+        <div class="f-lex">
+            <p class="f-30">万达国际影城(青秀万达)</p>
+            <div class="f-lex ml-auto al-center f-26">
+                <img class="data-icon" src="../images/icon/rank_icon.png" alt="">
+                <p class="ml-12 mr-20">人气5253</p>
+            </div>
+        </div>
+        <p class="f-26 gray-80">南宁市青秀区万达广场10楼</p>
+        <div class="cinema-label mt-12">
+            <p class="bg-yellow">零食</p>
+            <p class="bg-violet">MAX厅</p>
+            <p class="bg-green">中国巨幕</p>
+            <p class="bg-blue">停车场</p>
+            <span class="ml-auto f-26 gray-80 mr-20">1.1Km</span>
+        </div>
+        <div class="fl-en mt-12">
+            <div class="discount">
+                <div>
+                    <p class="bg-green">卡</p>
+                    <p>开通会员卡8折购票</p>
+                </div>
+                <div>
+                    <p class="bg-violet">团</p>
+                    <p>组团购票优惠8折起</p>
+                </div>
+            </div>
+            <div class="price mr-20">
+                <img src="../images/icon/price_icon.png" alt="">
+                <p class="red-80 f-30">
+                    19.9
+                    <span class="f-20">起</span>
+                </p>
+            </div>
+        </div>
+        <div class="time-main">
+            <div class="f-lex scroll-content">
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cinema-list white">
+        <div class="f-lex">
+            <p class="f-30">万达国际影城(青秀万达)</p>
+            <div class="f-lex ml-auto al-center f-26">
+                <img class="data-icon" src="../images/icon/rank_icon.png" alt="">
+                <p class="ml-12 mr-20">人气5253</p>
+            </div>
+        </div>
+        <p class="f-26 gray-80">南宁市青秀区万达广场10楼</p>
+        <div class="cinema-label mt-12">
+            <p class="bg-yellow">零食</p>
+            <p class="bg-violet">MAX厅</p>
+            <p class="bg-green">中国巨幕</p>
+            <p class="bg-blue">停车场</p>
+            <span class="ml-auto f-26 gray-80 mr-20">1.1Km</span>
+        </div>
+        <div class="fl-en mt-12">
+            <div class="discount">
+                <div>
+                    <p class="bg-green">卡</p>
+                    <p>开通会员卡8折购票</p>
+                </div>
+                <div>
+                    <p class="bg-violet">团</p>
+                    <p>组团购票优惠8折起</p>
+                </div>
+            </div>
+            <div class="price mr-20">
+                <img src="../images/icon/price_icon.png" alt="">
+                <p class="red-80 f-30">
+                    19.9
+                    <span class="f-20">起</span>
+                </p>
+            </div>
+        </div>
+        <div class="time-main">
+            <div class="f-lex scroll-content">
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+                <div class="time-list text-center" onclick="goLink('selectSeat.html')">
+                    <p class="lan-a gray-80 f-20">国语2D</p>
+                    <p class="f-30">17:55</p>
+                    <p class="gray-80 f-20">19:50离场</p>
+                    <p class="yellow f-26">30.9<span class="f-20">元</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/index.js"></script>
+</body>
+</html>
