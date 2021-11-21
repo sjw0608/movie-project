@@ -1,12 +1,12 @@
 import { defineComponent } from 'vue';
-import './index.scss';
+import './index.less';
 
 interface PropsDate {
   msg?: string;
   age?: number
 }
 
-export const HelloWorld = defineComponent({
+const HelloWorld = defineComponent({
   name: 'HelloWorld',
   props: {
     msg: String,
@@ -14,8 +14,6 @@ export const HelloWorld = defineComponent({
   },
 
   setup(props: PropsDate) {
-    console.log(props);
-
     return () => {
       const { msg } = props
       return (
@@ -62,3 +60,5 @@ export const HelloWorld = defineComponent({
   }
 
 });
+
+export default HelloWorld;

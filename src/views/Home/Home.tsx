@@ -1,5 +1,6 @@
 import { defineComponent, reactive } from "vue";
-import { HelloWorld } from "@/components/HelloWorld";
+import HelloWorld from "@/components/HelloWorld";
+import Footer from '@/components/Footer';
 
 interface State {
     msg: string;
@@ -22,6 +23,7 @@ export const Home = defineComponent({
                     {/*  */}
                     <HelloWorld msg={state.msg} />
                 </div>
+                <Footer />
             </div>
         )
     }
