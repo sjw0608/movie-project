@@ -2,11 +2,14 @@ import { defineComponent, reactive } from "vue";
 import HelloWorld from "@/components/HelloWorld";
 import Footer from '@/components/Footer';
 
+import Button from '@/components/Button';
+
 interface State {
     msg: string;
     age: number;
 }
 
+const Buttons = ['primary', 'ghost', 'dashed', 'link', 'text', 'default'];
 export const Home = defineComponent({
     setup(props) {
         let state: State = reactive({
@@ -19,9 +22,10 @@ export const Home = defineComponent({
         return () => (
             <div>
                 <div class="home">
-                    <img alt="Vue logo" src="../assets/logo.png" />
-                    {/*  */}
-                    <HelloWorld msg={state.msg} />
+
+                    {
+                        Buttons.map(item => <Button type={item}>按钮</Button>)
+                    }
                 </div>
                 <Footer />
             </div>

@@ -1,0 +1,123 @@
+@import "../theme/color.variables.less";
+@import "../theme/variables.less";
+
+// @prefix-button: @{prefix}-button;
+button {
+    outline: none;
+}
+
+@xs: 2px 8px;
+@sm: 5px 10px;
+@md: 8px 12px;
+@lg: 10px 16px;
+@xsloading: 1px 4px;
+@smloading: 2px 5px;
+@mdloading: 3px 6px;
+@lgloading: 4px 8px;
+
+.@{prefix}-button {
+    overflow: hidden;
+    border-radius: 6px;
+    border: 0;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    font-weight: 400;
+    -webkit-appearance: none;
+    user-select: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.1s linear;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    .@{prefix}-button-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+
+        .@{prefix}-button-icon {
+            display: inline-block;
+            margin-right: 8px;
+            line-height: 1;
+        }
+
+        .@{prefix}-button-loading-only {
+            display: block;
+            margin: 0;
+            height: 32px;
+            width: 32px;
+        }
+
+        .@{prefix}-button-icon-only {
+            display: block;
+            font-size: 12px;
+            margin: 0;
+            height: 16px;
+            width: 16px;
+        }
+    }
+}
+
+.@{prefix}-button-hasicon {
+    padding: 10px !important;
+}
+
+.@{prefix}-button-type-default {
+    background: transparent;
+    color: @black;
+    border: 1px solid @primaryColor;
+
+    &:focus,
+    &:hover {
+        background: mix(@white, @primaryColor, 90%);
+        border: 1px solid mix(@white, @primaryColor, 20%);
+        color: @primaryColor;
+    }
+}
+
+.@{prefix}-button-type-primary {
+    background: @primaryColor;
+    border: none;
+    color: @white;
+
+    &:focus,
+    &:hover {
+        background: mix(@white, @primaryColor, 30%);
+    }
+
+    &:active {
+        background: mix(@black, @primaryColor, 5%);
+    }
+
+    &:disabled {
+        background: mix(@white, @primaryColor, 40%);
+    }
+}
+
+.@{prefix}-button-type-link {
+    color: @primaryColor;
+    background: none;
+    border: none;
+}
+
+.@{prefix}-button-type-ghost {
+    background: #ffffff;
+    border: 1px solid $color;
+    color: @primaryColor;
+}
+
+.@{prefix}-button-type-text {
+    background: none;
+    border: none;
+    color: @black;
+}
+
+.@{prefix}-button-type-dashed {
+    background: none;
+    color: @black;
+    border: 1px dashed @dashedBorder;
+}
